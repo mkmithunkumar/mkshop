@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>mkshop | খাঁটি পণ্য ঘরে পৌঁছে দিন</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Announcement -->
+<div class="announcement">
+    🚚 সারা বাংলাদেশে ক্যাশ অন ডেলিভারি
+</div>
+
+<!-- Header -->
+<header>
+    <div class="container navbar">
+
+        <div class="logo">
+            🌾 mkshop
+        </div>
+
+        <nav>
+            <a href="#home">হোম</a>
+            <a href="#products">পণ্য</a>
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#contact">যোগাযোগ</a>
+        </nav>
+
+        <button class="cart-btn" onclick="openCart()">
+            🛒 কার্ট <span id="cartCount">0</span>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- Hero -->
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <span class="badge">🌿 প্রাকৃতিক ও মানসম্মত পণ্য</span>
+
+            <h1>
+                গ্রামের স্বাদ,
+                <span>আপনার ঘরে</span>
+            </h1>
+
+            <p>
+                বাছাই করা দেশি ও প্রাকৃতিক পণ্য এখন সহজেই
+                অর্ডার করুন। আমরা পৌঁছে দেব আপনার দরজায়।
+            </p>
+
+            <a href="#products" class="primary-btn">
+                🛍️ পণ্য দেখুন
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="images/product-1.jpg" alt="আমাদের পণ্য">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Products -->
+<section class="products-section" id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>আমাদের সংগ্রহ</span>
+            <h2>জনপ্রিয় পণ্য</h2>
+            <p>আপনার পছন্দের পণ্যটি বেছে নিন</p>
+        </div>
+
+        <div class="products-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <img src="images/product-1.jpg" alt="খাঁটি মধু">
+
+                <div class="product-info">
+
+                    <h3>খাঁটি মধু</h3>
+
+                    <p>
+                        প্রাকৃতিক উৎস থেকে সংগ্রহ করা মধু।
+                    </p>
+
+                    <div class="price">
+                        ৳650
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('খাঁটি মধু', 650)">
+                        কার্টে যোগ করুন
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <img src="images/product-2.jpg" alt="খেজুরের গুড়">
+
+                <div class="product-info">
+
+                    <h3>খেজুরের গুড়</h3>
+
+                    <p>
+                        দেশি খেজুরের রস থেকে তৈরি।
+                    </p>
+
+                    <div class="price">
+                        ৳450
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('খেজুরের গুড়', 450)">
+                        কার্টে যোগ করুন
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <img src="images/product-3.jpg" alt="সরিষার তেল">
+
+                <div class="product-info">
+
+                    <h3>সরিষার তেল</h3>
+
+                    <p>
+                        দেশি সরিষা থেকে তৈরি তেল।
+                    </p>
+
+                    <div class="price">
+                        ৳350
+                    </div>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('সরিষার তেল', 350)">
+                        কার্টে যোগ করুন
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Why us -->
+<section class="why-us" id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>কেন আমাদের বেছে নেবেন?</span>
+            <h2>আমাদের বিশেষত্ব</h2>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div>🌿</div>
+                <h3>মানসম্মত পণ্য</h3>
+                <p>পণ্য পাঠানোর আগে যাচাই করা হয়।</p>
+            </div>
+
+            <div class="feature">
+                <div>🚚</div>
+                <h3>দ্রুত ডেলিভারি</h3>
+                <p>সারা বাংলাদেশে ডেলিভারি সুবিধা।</p>
+            </div>
+
+            <div class="feature">
+                <div>💵</div>
+                <h3>ক্যাশ অন ডেলিভারি</h3>
+                <p>পণ্য হাতে পেয়ে মূল্য পরিশোধ করুন।</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>যোগাযোগ</span>
+            <h2>আমাদের সাথে কথা বলুন</h2>
+        </div>
+
+        <p>📞 ফোন: 01722838801</p>
+        <p>📧 Email: mkshop@gmail.com</p>
+
+    </div>
+
+</section>
+
+
+<!-- Cart Modal -->
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeCart()">×</button>
+
+        <h2>🛒 আপনার কার্ট</h2>
+
+        <div id="cartItems"></div>
+
+        <hr>
+
+        <h3>
+            মোট:
+            ৳<span id="cartTotal">0</span>
+        </h3>
+
+        <button class="checkout-btn" onclick="checkout()">
+            অর্ডার করুন
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>© 2026 mkshop — সর্বস্বত্ব সংরক্ষিত</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
